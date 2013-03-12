@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32mSlickExercise2Spec:[0m[0m
+[0m[[0minfo[0m] [0m[32mAfter fixing the Settings table the following test cases[0m[0m
+[0m[[0minfo[0m] [0m[32m- should teach you how to do auto incrementing[0m[0m
+[0m[[0minfo[0m] [0m[32m- should teach you how to do foreign keys in Slick[0m[0m
+[0m[[0minfo[0m] [0m[32m- should teach you how to do constraints in Slick[0m[0m
+[0m[[0minfo[0m] [0m[32m- should teach you about implicit joining[0m[0m
+[0m[[0minfo[0m] [0m[32m- should teach you how to use query templates[0m[0m
+[0m[[0minfo[0m] [0m[32m- should teach you about inspecting SQL statements that Slick produces[0m[0m
+[0m[[0minfo[0m] [0mPassed: : Total 6, Failed 0, Errors 0, Passed 6, Skipped 0[0m

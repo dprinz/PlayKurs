@@ -1,0 +1,18 @@
+eclipse
+exit
+eclipse
+exit
+eclipse
+~run
+~test-only exercises.TestingExerciseSpec
+test
+~test-only exercises.TestingExerciseSpec
+~test-only exercises.DBExercises
+~test-only exercises.SlickExercise1Spec
+run
+~test-only exercises.SlickExercise2Spec
+last test:test-only
+~test-only exercises.SlickExercise2Spec
+set  testOptions in Test += Tests.Argument("-oF")
+~test-only exercises.SlickExercise2Spec
+~run

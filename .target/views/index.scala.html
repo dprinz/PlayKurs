@@ -1,0 +1,10 @@
+@(repos: List[models.github.Repo])
+
+@main("Welcome to Play 2.1") {
+    
+    @for(repo <-repos) {
+    	@repo.name
+    }
+    <a href="@routes.Application.logout">Logout</a>
+    
+}

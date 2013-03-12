@@ -1,0 +1,30 @@
+@(loginForm: Form[Credentials])
+@import helper._
+@import helper.twitterBootstrap._
+<html>
+<head>
+	<title>Statisfy Login</title>
+</head>
+<body>
+@{ //How to handle global errors
+  loginForm.globalError.map{ error =>
+    <span class="error">{error.message}</span>
+  }
+}
+@form(routes.Application.submit) {
+	@inputText(loginForm("username"), args = 'placeholder -> "Username", '_label -> "", '_showConstraints -> false)
+	@inputPassword(loginForm("password"), args = 'placeholder -> "Password", '_label -> "", '_showConstraints -> false)
+	<input type="submit"/>
+}
+
+<a href="@routes.Application.index()">Home</a>
+@*<form action="@routes.Application.login()" method="POST">
+	<label for="username">Username</label>
+	<input id="username" name="username" type="text" placeholder="Username"><br/>
+		<label for="password">Password</label>
+	<input id="password" name="password" type="password" placeholder="Password"><br/>
+	<input type="submit"/>
+	
+</form>*@
+</body>
+</html>
